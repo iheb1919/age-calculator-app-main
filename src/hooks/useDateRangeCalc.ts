@@ -66,15 +66,18 @@ export const useDateRangeCalc = () => {
         newErrors.days = 'Must be a valid date';
         newErrors.months = ' ';
         newErrors.years = ' ';
+       
+      }
+    }
+
+    setErrors(newErrors);
+    if(newErrors.days || newErrors.months || newErrors.years){
         setCalculatedDate({
             days: null,
             months: null,
             years: null,
           })
-      }
     }
-
-    setErrors(newErrors);
 
     return !newErrors.days && !newErrors.months && !newErrors.years;
   };
