@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+:root{
+  --color-purple: 259 100 65;
+  --color-light-red: 0 100 67;
+  --color-white: 0 0 100;
+  --color-off-white: 0 0 94;
+  --color-light-grey: 0 0 86;
+  --color-smokey-grey: 0 1 44;
+  --color-off-black: 0 0 8;
+}
+}
